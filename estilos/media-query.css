@@ -3,6 +3,7 @@
 @media screen and (min-width: 769px) and (max-width: 992px){
     main{
         width: 80vw;
+        height: 300px
     }
     main>div#imagem{
         float: left;
@@ -13,29 +14,33 @@
         float: right;
         width: 60%;
         height: 100%;
-    }
-    div#formulario>form>h1{
-        text-align: center;
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 993px) {
-    main{
-        width: 80vw;
-    }
-    main>div#imagem{
-        float: right;
-        width: 40%;
-        height: 100%;
-    }
-    main>div#formulario{
-        float: left;
-        width: 60%;
     }
     div#formulario>form>h1{
         text-align: center;
         font-size: 2em;
     }
     
+}
+
+@media screen and (min-width: 993px) {
+    main{
+        width: 80vw;
+        height: 300px;
+    }
+    main>div#imagem{
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
+    main>div#formulario{
+        float: left;
+        width: 60%;
+    }
+    div#formulario>form>h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    div#formulario>form>p{
+        margin: 20px 0px;
+    }
 }

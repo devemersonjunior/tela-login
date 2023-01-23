@@ -20,7 +20,6 @@ main{
     position: absolute;
     top: 50% ;
     left: 50% ;
-    transform: translate(-50%,-50%);
     overflow: hidden;
 
     background-color: white;
@@ -29,6 +28,7 @@ main{
     border-radius: 20px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.377);
    
+    transform: translate(-50%,-50%);
     transition: width .3s,height .3s;
     transition-timing-function: ease; 
 }
@@ -51,25 +51,46 @@ div#formulario>form>h1{
 }
 div#formulario>form>p{
     font-size: 0.8em;
+    text-align: center;
 }
 form>.campo{
     background-color: #5f2c82;
     margin: 5px 0px;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
     height: 40px;
+    border: 2px solid #5f2c82;
 
 }
 div.campo > label{
     display: none;
 }
-div>form>input[type=submit]{
-    background-color: #5cbdb8;
+div.campo > span{
+    color: white;
+    width: 38px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+div.campo > input{
+    background-color: #a0ebe7;
+    height: 38px;
+    border-radius: 8px;
+    width: calc(100% - 42.8px);
+    border: 0px;
+    transform: translateY(-7px);
+} 
+div.campo > input:focus-within{
+    background-color: white;
+    
+}
+div>form>input[type=submit]  {
+    background-color: #a0ebe7;
     display: block;
     border-radius: 5px;   
     width: 100%;
     height: 40px;
     cursor: pointer;
+    border: 1px solid #3b7471;
 }
 
 div>form>input[type=submit]:hover{
@@ -84,9 +105,12 @@ div>form>a.botao{
     margin-top: 5px;
     height: 40px;
     width: 100%;
+    border: 1px solid #49a09d;
+    text-align: center;
+    padding-top: 8px ;
 }
 div>form>a.botao:hover{
     background-color: #49a09d;
-    border: 1px solid ;
+    border: 1px solid;
 }
 
