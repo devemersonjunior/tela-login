@@ -5,26 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-        <section id="container">
+        
             <div id="imagem">
-                foto
+                <!--foto-->
             </div>
        
             <div id="formulario">
                 <form action="login.php" method="post">
                     <h1>Login</h1>
+
                     <p>Seja bem vindo(a) novamente, Faça login para acessar a sua conta e acessar o seu ambiente</p>
-                    <label for="iusuario">Usuario</label>
-                    <input type="text" name="usuario" id="iusuario"><br>
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="senha" id="isenha">
+
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="usuario" id="iusuario" placeholder="digite seu nome de usuário" maxlength="30" autocomplete="username" required>
+                        <label for="iusuario">person</label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="digite sua senha" minlength="8" maxlength="20" autocomplete="current-password" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    
+                        <input type="submit" value="Entrar">
+                    
+                    
+                    <a href="#" class="botao">Esqueceu a senha?
+                        <span class="material-icons" style="font-size: 0.8em;">mail</span>
+                    </a>
+                    
                 </form>
             </div>
-        </section>
+        
     </main>
 </body>
 </html>
