@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+    Verde:#49a09d
+    lilas:#5f2c82
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to left, #5f2c82, #49a09d);
+}
+section{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+div#imagem{  
+    background-color: brown;
+    background-image: url(../imagens/imagens-login.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    width: 50%;
+    height:200px;
+    
+}
+
+div#formulario{
+    background-color: aqua;    
+    float: left;
+    width: 50%;
+    
+}
+
